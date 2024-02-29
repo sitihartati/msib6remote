@@ -1,0 +1,78 @@
+/* contoh selector di eksternal */
+
+p {
+    color: black;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+}
+
+body {
+    background-color: beige;
+    background-image: url('../img/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+fieldset,
+legend {
+    border-width: 1px;
+    border-color: burlywood;
+    border-radius: 30px;
+}
+
+legend {
+    padding: 10px;
+    background-color: chocolate;
+    color: burlywood;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+table {
+    border: 10px;
+    margin: auto;
+}
+
+tr {
+    padding: 5px;
+    border: 1px solid goldenrod;
+}
+
+tr:hover {
+    background-color: chocolate;
+    color: black;
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+
+/* contoh selector id dapat masuk ke semua tag */
+
+#paragraph {
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    color: black;
+}
+
+ul,
+li,
+a.item:link,
+a.item:visited,
+a.item:active {
+    text-decoration: none;
+    /*menghilanglan garis pada link*/
+    list-style: none;
+    /*ngilangin titik pada list*/
+    display: block;
+    /*mendisplay a sebagai blok*/
+    float: left;
+    /*memposisikan a dikiri*/
+    padding: 2px 3px;
+    /*memberi jarak dan membentuk persegi*/
+    background-color: beige;
+    /*mewarnai block*/
+}
